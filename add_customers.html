@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en-us">
+	<head>
+		<meta charset="utf-8">
+		<!--<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">-->
+
+		<title> WAVE </title>
+		<meta name="description" content="">
+		<meta name="author" content="">
+			
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<!-- Basic Styles -->
+		<link rel="stylesheet" type="text/css" media="screen" href="css/bootstrap.min.css">
+		<link rel="stylesheet" type="text/css" media="screen" href="css/font-awesome.min.css">
+
+		<!-- SmartAdmin Styles : Please note (smartadmin-production.css) was created using LESS variables -->
+		<link rel="stylesheet" type="text/css" media="screen" href="css/smartadmin-production.css">
+		<link rel="stylesheet" type="text/css" media="screen" href="css/smartadmin-skins.css">
+
+		<!-- SmartAdmin RTL Support is under construction
+		<link rel="stylesheet" type="text/css" media="screen" href="css/smartadmin-rtl.css"> -->
+
+		<!-- We recommend you use "your_style.css" to override SmartAdmin
+		     specific styles this will also ensure you retrain your customization with each SmartAdmin update.
+		<link rel="stylesheet" type="text/css" media="screen" href="css/your_style.css"> -->
+
+		<!-- Demo purpose only: goes with demo.js, you can delete this css when designing your own WebApp -->
+		<!--<link rel="stylesheet" type="text/css" media="screen" href="css/demo.css">
+
+	-->	<!-- FAVICONS -->
+		<link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+		<link rel="icon" href="img/favicon/favicon.ico" type="image/x-icon">
+
+		<!-- GOOGLE FONT -->
+		<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,300,400,700">
+
+		<!-- Specifying a Webpage Icon for Web Clip 
+			 Ref: https://developer.apple.com/library/ios/documentation/AppleApplications/Reference/SafariWebContent/ConfiguringWebApplications/ConfiguringWebApplications.html -->
+		<link rel="apple-touch-icon" href="img/splash/sptouch-icon-iphone.png">
+		<link rel="apple-touch-icon" sizes="76x76" href="img/splash/touch-icon-ipad.png">
+		<link rel="apple-touch-icon" sizes="120x120" href="img/splash/touch-icon-iphone-retina.png">
+		<link rel="apple-touch-icon" sizes="152x152" href="img/splash/touch-icon-ipad-retina.png">
+		
+		<!-- iOS web-app metas : hides Safari UI Components and Changes Status Bar Appearance -->
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		
+		<!-- Startup image for web apps -->
+		<link rel="apple-touch-startup-image" href="img/splash/ipad-landscape.png" media="screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:landscape)">
+		<link rel="apple-touch-startup-image" href="img/splash/ipad-portrait.png" media="screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:portrait)">
+		<link rel="apple-touch-startup-image" href="img/splash/iphone.png" media="screen and (max-device-width: 320px)">
+
+		
+		<script src="js/jquery-2.0.2.min.js"></script>
+		<script src="js/bootstrap/bootstrap.min.js"></script>
+	</head>
+	<body>
+		
+
+<div id="content">
+			    <header id="header">
+						<div id="logo-group" style="margin: 0px;">
+								<span id="logo" style="margin-top: 10px;"> <img src="img/logo-sedar.png" alt="Sedar"> </span>
+						</div>
+						<div id="logout" class="btn-header transparent pull-right">
+								<span> <a onclick="logout()" title="Sign Out" data-logout-msg="You can improve your security further after logging out by closing this opened browser"><i class="fa fa-sign-out"></i></a> </span>
+						</div>
+				</header>
+				<div id="ribbon">
+						<ol style="color: #000;font-size: 28px;font-weight: bold" class="breadcrumb"> Welcome <span id="user_name"style="font-size:28px;"></span> </ol>
+						<span class="ribbon-button-alignment pull-right">
+								<span style="color: #000;font-size: 28px;font-weight: bold" id="showroom_name_header"></span>
+						</span>
+				</div>
+<section id="widget-grid" class="">
+
+
+	<!-- START ROW -->
+
+
+
+
+		<!-- NEW COL START -->
+		<article class="col-sm-12 col-md-12 col-lg-6 sortable-grid ui-sortable">
+			
+			<!-- Widget ID (each widget will need unique ID)-->
+			<div id="wid-id-1" class="jarviswidget jarviswidget-color-greenLight  jarviswidget-sortable" data-widget-deletebutton="false" data-widget-editbutton="false" >
+				<label>
+						<button onclick="window.history.back();" class="btn btn-sm btn-primary" type="button" style="font-size:22px;">Back</button>
+				</label>
+				<header>
+					<span class="widget-icon"> <i class="fa fa-edit"></i> </span>
+					<h2 style="font-size:28px;">Add Customer</h2>				
+					
+				</header>
+
+				<!-- widget div-->
+				<div>
+					
+					<!-- widget edit box -->
+					<div class="jarviswidget-editbox">
+						<!-- This area used as dropdown edit box -->
+						
+					</div>
+					<!-- end widget edit box -->
+					
+					<!-- widget content -->
+					<div class="widget-body no-padding">
+						
+<form  class="smart-form">
+        <fieldset>
+	     <div class="row">
+		     <section class="col col-lg-6">
+			    <label class="label" style="font-size:22px;">First Name</label>
+			    <label class="input"> 
+			    <input  type="text" name="f_name" id='f_name' style="font-size:22px;height: 50px;">
+			    </label>
+		     </section>
+		     <section class="col col-lg-6">
+			    <label class="label" style="font-size:22px;">Last Name</label>
+			    <label class="input"> 
+			    <input  type="text" name="l_name" id='l_name' style="font-size:22px;height: 50px;">
+			    </label>
+		     </section>
+	     </div>
+	     <div class="row">
+	       
+		     <section class="col col-lg-6">
+			    <label class="label" style="font-size:22px;">Gender</label>
+			    <section class="col-xs-5 label">			    
+			    <input type="radio" name="gender" value="male" ><label style="font-size:22px;">Male</label>
+			    </section>
+ <section class="col-xs-5 label">
+				   <input type="radio" name="gender" value="female" ><label style="font-size:22px;">Female</label>
+			     </section>
+		     </section>
+              </div>
+               <div class="row">
+		     <section class="col col-lg-6">
+			    <label class="label" style="font-size:22px;">Email</label>
+			    <label class="input"> 
+			    <input  type="email" name="email" id="email" style="font-size:22px;height: 50px;">
+			    </label>
+		     </section>
+		     
+		     <section class="col col-lg-6">
+			    <label class="label" style="font-size:22px;">Mobile</label>
+			    <label class="input"> 
+			    <input type="text" name="mobile" id="mobile" style="font-size:22px;height: 50px;" >
+			    </label>
+		     </section>
+	      </div>
+
+              <div class="row">
+		     <section class="col col-lg-6">
+			      <label class="label" style="font-size:22px;">Address</label>
+			      <label class="textarea"> 										
+			      <textarea  name="address" id="address" rows="3" style="font-size:22px;height: 50px;" ></textarea> 
+			      </label>
+			   <!-- <label class="input"> 
+			    <input  type="text" name="address" value="">
+			    </label>-->
+		     </section>
+		      <section class="col col-lg-6">
+			    <label class="label" style="font-size:22px;">City</label>
+			    <label class="input"> 
+			    <input type="text" name="city" id="city" value="" style="font-size:22px;height: 50px;" >
+			    </label>
+		     </section>
+</div>
+	      <div class="row">
+	       
+		    
+		     <section class="col col-lg-6">
+			    <label class="label" style="font-size:22px;">Country</label>
+			    <label class="input"> 
+			   
+			    <input id="country" type="text" readonly  name="country" value="" style="font-size:22px;height: 50px;">
+			    </label>
+		     </section>
+		      <section class="col col-lg-6">
+			    <label class="label" style="font-size:22px;">Showroom</label>
+			    <label class="input"> 
+			     
+			    
+			    
+			    <input id="showroom_name" readonly  type="text" style="font-size:22px;height: 50px;" />
+ <input id="showroom_id" readonly  type="hidden" name="showroom_id" style="font-size:22px;height: 50px;" />
+  <input id="user_id" readonly  type="hidden" name="user_id" style="font-size:22px;height: 50px;" />
+			   
+			    </label>
+		     </section>
+		     
+	      </div>
+	      
+       </fieldset>
+<footer>
+<button class="btn btn-default" onclick="window.history.back();" type="button" style="font-size:22px;"> Cancel </button>
+<input onclick="formsubmit()" type="button" name="submit" value='submit' class="btn btn-spine" style="font-size:22px;" />
+
+</footer>
+</form>						
+						
+					</div>
+					<!-- end widget content -->
+					
+				</div>
+				<!-- end widget div -->
+				
+			</div>
+			<!-- end widget -->
+		
+
+		</article>
+		<!-- END COL -->		
+
+
+
+	<!-- END ROW -->
+
+</section>
+<!-- end widget grid -->
+</div>
+
+<script type="text/javascript">
+var showroom_name=localStorage.getItem("showroom_name");
+var user_name=localStorage.getItem("user_name");
+var showroom_id=localStorage.getItem("showroom_id");
+document.getElementById("showroom_name_header").innerHTML=showroom_name;
+document.getElementById("user_name").innerHTML=user_name;
+var db = window.openDatabase("Database", "1.0", "PhoneGap Demo", 100 * 1024 * 1024);
+var showroom_id=localStorage.getItem("showroom_id");
+var user_id=localStorage.getItem("user_id");
+db.transaction(function (tx){
+    tx.executeSql('SELECT * FROM show_room where showroom_id = ?', [showroom_id], function (tx, results) {
+       
+	   var showroom_name = results.rows.item(0).showroom_name;
+       var city = results.rows.item(0).city;
+       var country = results.rows.item(0).country;
+       
+       
+       document.getElementById("city").value = city;
+       document.getElementById("country").value = country;
+       document.getElementById("showroom_name").value = showroom_name;
+       document.getElementById("showroom_id").value = showroom_id;
+       document.getElementById("user_id").value = user_id;
+       
+    });
+});
+
+
+function formsubmit() {
+  var f_name = document.getElementById("f_name").value;
+  var l_name = document.getElementById("l_name").value;
+  var email = document.getElementById("email").value;
+  var mobile = document.getElementById("mobile").value;
+  var address = document.getElementById("address").value;
+  var city = document.getElementById("city").value;
+   var country = document.getElementById("country").value;
+  var showroom_name = document.getElementById("showroom_name").value;
+  var showroom_id = document.getElementById("showroom_id").value;
+  var user_id = document.getElementById("user_id").value;
+  var gender =	$("input[name=gender]:checked").val()
+  
+  
+
+  
+  $.ajax({
+
+       type: 'POST',
+    url: 'http://wave2dev.azurewebsites.net/app/ajax_add_customer.php',
+    
+    
+    data :  'f_name='+f_name+'&l_name='+l_name+'&email='+email+'&mobile='+mobile+'&address='+address+'&city='+city+'&country='+country+'&showroom_name='+showroom_name+'&showroom_id='+showroom_id+'&user_id='+user_id+'&gender='+gender ,
+    dataType:"json",
+    processData: false,
+    success: function (json) {
+      
+        if (json.add_status=='Success') {
+	      alert('Customer is successfully Added.... ');
+	      window.history.back();
+				admin_user();
+	}
+ 
+ //window.open('scan.html', '_blank','location=no');
+ }
+  });
+  return false;
+};
+ 
+function admin_user(){
+	var appcode='SEDARWAVE0024';
+	var showroom_name=localStorage.getItem("showroom_name");
+	var user_name=localStorage.getItem("user_name");
+	var user_id=localStorage.getItem("user_id");
+	var d = new Date();
+	var month=d.getMonth()+1;
+	var timestamp=d.getFullYear()+"-"+ month +"-"+d.getDate()+" "+d.getHours()+':'+d.getMinutes()+':'+d.getSeconds();
+	$.ajax({
+		type: "POST",
+		url: "http://wave2dev.azurewebsites.net/app/ajax_admin_user.php",
+		data :  'user_name='+user_name+'&showroom_name='+showroom_name+'&appcode='+appcode+'&user_id='+user_id+'&time_stamp='+timestamp,
+		dataType: "json",
+		processData: false,
+		success: function(json) {
+			//alert(json.log_status);
+			//alert('success user log');
+		}
+	});
+};
+
+       
+	
+	// DO NOT REMOVE : GLOBAL FUNCTIONS!
+	pageSetUp();
+	
+	
+	// PAGE RELATED SCRIPTS
+
+	// Load form valisation dependency 
+	loadScript("js/plugin/jquery-form/jquery-form.min.js", runFormValidation);
+	
+	
+	
+</script>
+	</body>
+</html>
