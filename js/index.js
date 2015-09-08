@@ -142,7 +142,7 @@ states[Connection.NONE] = 'No network connection';
             window.open('overview.html', '_blank', 'location=yes');
             //  var showroom_id=localStorage.getItem("showroom_id");
             //  var user_id=localStorage.getItem("user_id");
-            //window.open('http://wave2dev.elasticbeanstalk.com/app/overview.php?qrcode='+QRcode+'&user_id='+user_id+'&showroom_id='+showroom_id, '_blank', 'location=yes');
+            //window.open('http://wave1.elasticbeanstalk.com/app/overview.php?qrcode='+QRcode+'&user_id='+user_id+'&showroom_id='+showroom_id, '_blank', 'location=yes');
            }
         }*/
             //alert(QRcode);
