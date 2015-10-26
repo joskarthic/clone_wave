@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <widget xmlns     = "http://www.w3.org/ns/widgets"
         xmlns:gap = "http://phonegap.com/ns/1.0"
-        id        = "com.phonegap.ryanw.barcodedemo12"
+        id        = "com.phonegap.ryanw.barcodedemo"
         version   = "2.0.0">
-    <name>WAVE2DEV</name>
+    <name>SEDAR WAVE</name>
 
     <description>
-       CLONE FOR SEDAR WAVE 
+       SEDAR WAVE 
     </description>
 
-	<author href="http://phonegap.com" email="support@phonegap.com">
-        CLONE FOR SEDAR WAVE
+    <author href="http://phonegap.com" email="support@phonegap.com">
+        SEDAR WAVE
     </author>
 
     <!--<gap:plugin name="com.sharinglabs.cordova.plugin.cache" version="1.0.0" />-->
