@@ -3,7 +3,7 @@ $(document).ready(function(){
     var name='wave';
     $.ajax({
         type: "POST",
-        url: 'http://wave1.elasticbeanstalk.com/app/ajax_sync_product_count.php',
+        url: 'http://wave2dev.elasticbeanstalk.com/app/ajax_sync_product_count.php',
         data : 'uname='+name ,
         dataType:"json",
         processData: false,
@@ -104,10 +104,10 @@ function queryDB(tx) {
                 if (results.rows.item(0).image==""&&results.rows.item(0).image1==""&&results.rows.item(0).image2==""&&results.rows.item(0).image3=="") {
                     $("#previewimage_null").removeClass("hide");
                 }
-                image = "http://wave1.elasticbeanstalk.com/admin/"+results.rows.item(i).image;
-                image1 = "http://wave1.elasticbeanstalk.com/admin/"+results.rows.item(i).image1;
-                image2 = "http://wave1.elasticbeanstalk.com/admin/"+results.rows.item(i).image2;
-                image3 = "http://wave1.elasticbeanstalk.com/admin/"+results.rows.item(i).image3;
+                image = "http://wave.elasticbeanstalk.com/admin/"+results.rows.item(i).image;
+                image1 = "http://wave.elasticbeanstalk.com/admin/"+results.rows.item(i).image1;
+                image2 = "http://wave.elasticbeanstalk.com/admin/"+results.rows.item(i).image2;
+                image3 = "http://wave.elasticbeanstalk.com/admin/"+results.rows.item(i).image3;
                 
                 $("#href_item_image1").attr(image);
                 $("#href_item_image2").attr(image1);

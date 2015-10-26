@@ -269,7 +269,7 @@ function formsubmit() {
   $.ajax({
 
        type: 'POST',
-    url: 'http://wave2dev.azurewebsites.net/app/ajax_add_customer.php',
+    url: 'http://wave.elasticbeanstalk.com/app/ajax_add_customer.php',
     
     
     data :  'f_name='+f_name+'&l_name='+l_name+'&email='+email+'&mobile='+mobile+'&address='+address+'&city='+city+'&country='+country+'&showroom_name='+showroom_name+'&showroom_id='+showroom_id+'&user_id='+user_id+'&gender='+gender ,
@@ -290,7 +290,7 @@ function formsubmit() {
 };
  
 function admin_user(){
-	var appcode='SEDARWAVE0024';
+	var appcode='SEDARWAVE0025.5';
 	var showroom_name=localStorage.getItem("showroom_name");
 	var user_name=localStorage.getItem("user_name");
 	var user_id=localStorage.getItem("user_id");
@@ -299,7 +299,7 @@ function admin_user(){
 	var timestamp=d.getFullYear()+"-"+ month +"-"+d.getDate()+" "+d.getHours()+':'+d.getMinutes()+':'+d.getSeconds();
 	$.ajax({
 		type: "POST",
-		url: "http://wave2dev.azurewebsites.net/app/ajax_admin_user.php",
+		url: "http://wave.elasticbeanstalk.com/app/ajax_admin_user.php",
 		data :  'user_name='+user_name+'&showroom_name='+showroom_name+'&appcode='+appcode+'&user_id='+user_id+'&time_stamp='+timestamp,
 		dataType: "json",
 		processData: false,
