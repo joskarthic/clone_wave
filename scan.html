@@ -203,6 +203,7 @@ function truncate_local_productlist()
 		tx.executeSql('DROP TABLE IF EXISTS productlist');
 		alert('Local Database Truncated. Please wait while new database sync in progress');
 		localStorage.removeItem("local_count");
+		document.getElementById('localitem_count').value = '';
 		product_sync();
 	});
 }
