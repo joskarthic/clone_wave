@@ -93,7 +93,7 @@
 							<div id="product_sync5" class="progress-bar progress-bar-success hide " role="progressbar" style="width:100%">100%</div>
 						</div> -->
 						<div class="progress">
-							<div id="product_sync" class="progress-bar progress-bar-success hide" role="progressbar" style="width:30%">30%</div>
+							<div id="product_sync" class="progress-bar progress-bar-success hide" role="progressbar" style="width:20%">30%</div>
 							<div id="product_sync1" class="progress-bar progress-bar-success hide" role="progressbar" style="width:60%">60%</div>
 							<div id="product_sync2" class="progress-bar progress-bar-success hide " role="progressbar" style="width:85%">80%</div> 
 							<div id="product_sync3" class="progress-bar progress-bar-success hide " role="progressbar" style="width:95%">All Most Done</div>
@@ -202,6 +202,7 @@ function truncate_local_productlist()
 		db.transaction(function (tx){
 		tx.executeSql('DROP TABLE IF EXISTS productlist');
 		alert('Local Database Truncated. Please wait while new database sync in progress');
+		localStorage.removeItem("local_count");
 		product_sync();
 	});
 }
