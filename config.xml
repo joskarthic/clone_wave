@@ -13,10 +13,8 @@
         SEDAR WAVE
     </author>
 
-    <!--<gap:plugin name="com.sharinglabs.cordova.plugin.cache" version="1.0.0" />
+    <!--<gap:plugin name="com.sharinglabs.cordova.plugin.cache" version="1.0.0" />-->
     <gap:plugin name="com.phonegap.plugins.barcodescanner"/>
-    -->
-    
     <gap:plugin name="net.tunts.webintent" version="0.2.1" />
     <gap:plugin name="org.apache.cordova.network-information" version="0.2.12" />
     <gap:plugin name="com.brodysoft.sqliteplugin" version="1.0.0" />
